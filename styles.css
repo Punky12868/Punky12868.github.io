@@ -95,7 +95,7 @@ header img {
 }
 
 /* Adjusting text sizes for mobile devices */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 800px) {
     /* Reduce font sizes for smaller screens */
     body {
         font-size: 14px;
