@@ -1,0 +1,94 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ffffff;
+
+    background-image: url('imgs/BG.png');
+    background-size: cover; /* Esto asegura que la imagen de fondo cubra todo el área del cuerpo */
+    background-position: center; /* Esto centra la imagen de fondo */
+    background-repeat: repeat-y; /* Esto repite la imagen de fondo verticalmente */
+
+    font-family: 'Bahnschrift Condensed', Arial, sans-serif;
+    position: relative; /* Ensure the vignette overlay covers the entire body */
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 100%);
+    pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+.divider {
+    border-top: 2px solid #ffffff;
+    margin: 5px auto;
+    width: 50%;
+    max-width: 600px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.teamOne {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.teamTwo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.team-member {
+    text-align: center;
+    margin: 0 10px;
+}
+p {
+    font-size: 16px; /* Tamaño de fuente deseado */
+}
+@font-face {
+    font-family: 'Bahnschrift Condensed';
+    src: url('fonts/bahnschrift/BAHNSCHRIFT.TTF') format('TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Add this CSS to your existing stylesheet */
+
+img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* If you want to set specific sizes for certain images, you can do it like this */
+
+/* Example: Adjusting the size of the logo */
+header img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Example: Adjusting the size of game screenshots */
+.section img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Example: Adjusting the size of team member photos */
+.team-member img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.container img {
+    width: 1000px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
