@@ -55,5 +55,45 @@ header {
 }
 
 p {
+<<<<<<< HEAD
     font-size: 16px; /* Base font size */
+=======
+    font-size: 16px; /* Tamaño de fuente deseado */
+}
+@font-face {
+    font-family: 'Bahnschrift Condensed';
+    src: url('fonts/bahnschrift/BAHNSCHRIFT.TTF') format('TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Add this CSS to your existing stylesheet */
+
+img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* If you want to set specific sizes for certain images, you can do it like this */
+
+/* Example: Adjusting the size of the logo */
+header img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Example: Adjusting the size of game screenshots */
+.section img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Example: Adjusting the size of team member photos */
+.team-member img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.container img {
+    width: 1000px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+>>>>>>> parent of 306d880 (mobile?)
 }
