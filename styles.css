@@ -95,7 +95,7 @@ header img {
 }
 
 /* Adjusting text sizes for mobile devices */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     /* Reduce font sizes for smaller screens */
     body {
         font-size: 14px;
@@ -114,6 +114,7 @@ header img {
     .teamOne,
     .teamTwo {
         flex-direction: column; /* Change the direction to column */
+        align-items: center; /* Center items horizontally */
     }
 
     /* Adjust margins to create space between team members */
