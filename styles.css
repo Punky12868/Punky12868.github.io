@@ -110,4 +110,14 @@ header img {
     p {
         font-size: 14px;
     }
+
+    .teamOne,
+    .teamTwo {
+        flex-direction: column; /* Change the direction to column */
+    }
+
+    /* Adjust margins to create space between team members */
+    .team-member {
+        margin: 10px 0; /* Add margin to create space between team members */
+    }
 }
